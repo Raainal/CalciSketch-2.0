@@ -16,14 +16,14 @@ import time
 from PIL import Image, ImageTk, ImageDraw,ImageGrab
 import google.generativeai as genai
 
-ollama_client = ollama.Client(host="http://localhost:11450")
+ollama_client = ollama.Client(host="http://localhost:11450") #add your ollama client port
 
 ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("dark-blue")
 class CalciSketchApp(ctk.CTk):
     def __init__(self):
-        ollama_client = ollama.Client(host="http://localhost:11450")
-        self.api_key = "AIzaSyCLMQuQich4jg7c4FzGx8OfIuUWU9KakHk"
+        ollama_client = ollama.Client(host="http://localhost:11450") #add your ollama client port
+        self.api_key = "Add your api key" 
         genai.configure(api_key=self.api_key)
         super().__init__()
         self.title("CalciSketch")
